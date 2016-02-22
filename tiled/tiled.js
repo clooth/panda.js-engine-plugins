@@ -85,7 +85,7 @@ game.createClass('TileMap', {
                     };
                 }
 
-                var texture = new game.Texture(game.TextureCache[path], new game.PIXI.Rectangle(frame.x, frame.y, frame.width, frame.height));
+                var texture = new game.Texture(game.BaseTexture.cache[path], frame.x, frame.y, frame.width, frame.height);
 
                 this.tiles[tileIndex + index] = texture;
             }
